@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body * { /*il sert a prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur*/
+  box-sizing: border-box;
+}
+
+a { /* pour empecher les liens hypertexte de devenir violet et souligné */
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  color: white;
+  width: 100%;
+  background: #283c86; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45a247, #283c86); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  margin-left: 10px;
+}
+.navbar__text {
+  font-size: 1.3em;
+  text-shadow: 0.5rem 0.5rem black;
+}
+.navbar__link--margginright {
+  margin-right: 50px;
+}
+
+footer {
+  background: #283c86; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #45a247, #283c86); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer__content {
+  margin-left: 40px;
+  color: white;
+}
+footer__content p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+footer__logo a {
+  margin-right: 20px;
+  color: white;
+}
